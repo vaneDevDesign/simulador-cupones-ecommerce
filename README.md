@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+##  🛒Sistema de cupones para ecommerce - VaneDevDesign
+Este proyecto es una simulación práctica de un sistema de cupones en un e-commerce. Incluye funcionalidades como:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Visualización de productos por categoría
+- Carrito de compras con aumentos/disminuciones
+- Aplicación de cupones de diferentes tipos y reglas
+- Panel administrativo visual para gestión y validación de cupones
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+## Imagenes del Proyecto
+### DESKTOP
+<img width="689" alt="image" src="https://github.com/user-attachments/assets/5dca95e5-afd7-4d36-8416-36a31279e58f" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### MOBILE
+<img width="231" alt="image" src="https://github.com/user-attachments/assets/53bebcd3-d325-435c-8b89-531f32d30ae9" />
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+### Coupon Dashboard
+
+<img width="733" alt="image" src="https://github.com/user-attachments/assets/0e631f90-4846-4dae-86d8-0f0622203626" />
+
+
+## 🚀 Instalación y uso
+
+Sigue estos pasos para correr el proyecto localmente:
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/vaneDevDesign/simulador-cupones-ecommerce.git
+cd simulador-cupones-ecommerce
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Instala las dependencias
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Corre el proyecto en modo desarrollo
+
+```bash
+npm run dev
+```
+
+---
+
+## ✨ Créditos
+
+Desarrollado por **Vanessa Sanchez**.  
+Software Developer | Apasionada por la construcción de soluciones digitales modernas.
+
+---
+
+## 📲 ¡Conecta conmigo!
+
+Si te gustó el proyecto o quieres seguir mi trabajo, te invito a seguirme en redes sociales:
+
+- Instagram: [@vanedevdesign](https://www.instagram.com/vanedevdesign/)
+- Tiktok: [@vane.devdesign](https://www.tiktok.com/@vane.devdesign)
+  
+## 📖 Documentación adicional
+
+¿Quieres conocer más detalles técnicos, decisiones de arquitectura y roadmap extendido del proyecto?  
+Puedes acceder a la documentación completa en Notion aquí:
+
+➡️ [Ver Documentación Completa en Notion](https://www.notion.so/Documentacion-App-Cupones-VaneDevDesign-2010ceee7fbd8083bffff4a89973a67e?pvs=4)
+
+¡Gracias por tu apoyo! 🚀✨
+
