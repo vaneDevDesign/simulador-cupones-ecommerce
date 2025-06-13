@@ -26,20 +26,25 @@ Este proyecto es una simulación práctica de un sistema de cupones en un e-comm
 
 Sigue estos pasos para correr el proyecto localmente:
 
-### 1. Clona el repositorio
+### 1. Instalar node en tu PC
+
+```bash
+Tener una version de node arriba de la v18
+```
+### 2. Clona el repositorio
 
 ```bash
 git clone https://github.com/vaneDevDesign/simulador-cupones-ecommerce.git
 cd simulador-cupones-ecommerce
 ```
 
-### 2. Instala las dependencias
+### 3. Instala las dependencias
 
 ```bash
 npm install
 ```
 
-### 3. Corre el proyecto en modo desarrollo
+### 4. Corre el proyecto en modo desarrollo
 
 ```bash
 npm run dev
