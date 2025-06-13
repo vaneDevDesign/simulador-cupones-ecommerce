@@ -5,7 +5,7 @@ import type { Coupon } from "../types/Coupon";
 
 export default function CouponDashboard() {
   const [search, setSearch] = useState("");
-  const [coupons, setCoupons] = useState<Coupon[]>(initialCoupons);
+  const [coupons] = useState<Coupon[]>(initialCoupons);
 
   const filteredCoupons = coupons.filter((coupon) =>
     coupon.code.toLowerCase().includes(search.toLowerCase())
