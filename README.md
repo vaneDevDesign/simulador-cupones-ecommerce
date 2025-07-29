@@ -8,7 +8,7 @@ Este proyecto es una simulación práctica de un sistema de cupones en un e-comm
 
 
 ---
-##Demo 
+## Demo 
 https://simulador-cupones-ecommerce-vyv7.vercel.app/
 ## Imagenes del Proyecto
 ### DESKTOP
