@@ -1,8 +1,9 @@
-import { useState } from "react";
-import CouponInput from "../coupons/CouponInput";
-import type { Coupon } from "../../types/Coupon";
-import { products } from "../../data/products";
-import { useCart } from "../../context/useCart";
+import { useState } from 'react';
+import CouponInput from '../coupons/CouponInput';
+import type { Coupon } from '../../types/Coupon';
+import { products } from '../../data/products';
+import { useCart } from '../../context/useCart';
+import { Link } from 'react-router-dom';
 
 export default function Cart() {
   const { state, dispatch } = useCart();
@@ -20,11 +21,11 @@ export default function Cart() {
   const total = cartItemsDetailed.reduce((acc, item) => acc + item.subtotal, 0);
 
   const discount =
-    appliedCoupon?.discountType === "percentage"
+    appliedCoupon?.discountType === 'percentage'
       ? (total * appliedCoupon.discountValue) / 100
-      : appliedCoupon?.discountType === "fixed"
+      : appliedCoupon?.discountType === 'fixed'
       ? appliedCoupon.discountValue
-      : appliedCoupon?.discountType === "free_product"
+      : appliedCoupon?.discountType === 'free_product'
       ? (() => {
           const mugItem = cartItemsDetailed.find(
             (item) => item.id === appliedCoupon.targetId
@@ -39,9 +40,10 @@ export default function Cart() {
     <div className="bg-white p-4 rounded-xl shadow-md space-y-4">
       <div className="flex justify-between items-center">
         <h2 className="text-xl font-bold text-gray-900">Carrito</h2>
-        <a href="/coupons" className="text-sm text-blue-600 hover:underline">
+
+        <Link to="/coupons" className="text-sm text-blue-600 hover:underline">
           COUPON DASHBOARD
-        </a>
+        </Link>
       </div>
 
       {cartItemsDetailed.length === 0 ? (
@@ -70,7 +72,7 @@ export default function Cart() {
                 <button
                   className="px-2 py-1 border rounded text-sm"
                   onClick={() =>
-                    dispatch({ type: "DECREASE", payload: item.id })
+                    dispatch({ type: 'DECREASE', payload: item.id })
                   }
                 >
                   -
@@ -79,7 +81,7 @@ export default function Cart() {
                 <button
                   className="px-2 py-1 border rounded text-sm"
                   onClick={() =>
-                    dispatch({ type: "INCREASE", payload: item.id })
+                    dispatch({ type: 'INCREASE', payload: item.id })
                   }
                 >
                   +
